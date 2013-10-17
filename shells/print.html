@@ -30,7 +30,9 @@
       if(curSlide > totalNumOfSlides) return;
       var iframe = $("iframe")[curSlide];
       var slideNumber = curSlide + 1;
-      iframe.src = iframe.url = slideURL+"#"+slideNumber;
+      // I think there is no way to determine the last incremantal
+      // 1000 should be sufficient for that ;)
+      iframe.src = iframe.url = slideURL+"#"+slideNumber+".1000";
       curSlide = slideNumber;
       // depending on how intense it is to render the slides you might want
       // to wait for them to be rendered before the next slide is inserted
