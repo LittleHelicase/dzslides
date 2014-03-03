@@ -95,6 +95,8 @@
 
 <div id="progress-bar"></div>
 
+<!-- Default Style -->
+<script src="style/dzexstyle.css.js"></script>
 <script src="dzslides.js"></script>
 
 <!-- Default Style -->
@@ -109,12 +111,13 @@ jQuery(document).ready(function($){
      $("head").append(cssTag); 
  };
 
+ Dz.width = 1920;
+ Dz.height = 1080;
  dztemplate = Handlebars.templates["dzexstyle.css"];
  template = Handlebars.templates["style.css"];
  loadCss(Dz, dztemplate, template, jQueryLoadCSS);
 });
 </script>
-
 <!-- vim: set fdm=marker: }}} -->
 </body>
 </html>
