@@ -1,27 +1,26 @@
 ## Basic usage
 
-**DZSlides** is a **one-file** HTML template to build slides in HTML5 and CSS3.
+**DZSlides-Ex** is a HTML/JS template to build slides in HTML5 and CSS3. It is based on the dzslides implementation by Paul Rouget, see [dzslides](/paulrouget/dzslides).
 
-[template.html](/paulrouget/dzslides/blob/master/template.html) is the only file you need. Edit the file, add your content, change the style, and you're done. To see the slides in action, just load
-the file in your browser.
+[template.html](/LittleHelicase/dzslides-ex/blob/master/template.html) is the basic file you need. Edit the file, add your content. You can change the style in the style directory. It is planned to get a **one-html** file version of the slides later. DZSlides-Ex is designed to support the creation of your slides with some simple tools.
 
 ## Features
 
-* Slides can include any HTML5 content (text, image, video, iframes, …);
+* Slides can include any HTML5 content (text, image, video, iframes, canvases, …);
 * Slides transitions are animated with CSS3 (sliding by default);
-* Resolution independent (slides are scaled according to the size of the browser. The virtual dimension is 800x600);
+* **Real** Resolution independence (slides are scaled according to the size of the browser. The virtual dimension defaults to 800x600. This can introduce some ugly effects when using HTML5 Canvas);
+* Support for different formats like Full HD Wide Screen Slides;
 * Fullscreen presentation (HTML5 FullScreen API supported) - press `f` to go fullscreen;
 * Incremental content;
 * Mobile Friendly (supports touch events).
 
 ## Shells
 
-The features of DZSlides are intentionally limited to keep the template light
-and simple to understand. *Shells* are extensions that bring new features
-to your slides. Here, you'll find 2 shells:
+*Shells* are extensions that bring new features to your slides. Here, you'll find 3 shells:
 
 * `shells/embedder.html` to embed a presentation in a web page
 * `shells/onstage.html` to show your slides with a control panel
+* `shells/print.html` to give a printable html file that can e.g. be used to create a pdf version with nice text selection support (In progress).
 
 To use them, just load the file in your browser, and follow the instructions.
 

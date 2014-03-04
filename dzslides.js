@@ -199,7 +199,11 @@ Dz.onhashchange = function() {
       newstep = 0;
   if (cursor.length == 2) {
     newidx = ~~cursor[1].split(".")[0];
+    secCursor = cursor[1].split(".")[1];
     newstep = ~~cursor[1].split(".")[1];
+    if(secCursor == "e"){
+      newstep =  Dz.slides[newidx - 1].$$('.incremental > *').length;
+    }
     if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
       newstep = 0;
       newidx++;
